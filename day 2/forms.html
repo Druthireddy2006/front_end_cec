@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        form{
+            border-radius:20px;
+            padding:200px;
+            margin:200px;
+            background-color:blanchedalmond;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        table{
+            color:crimson;
+            background-color: antiquewhite;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+        }
+        .pass{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="forms.html"></li>Forms</a>
+            <li><a href="../image/tables.html"></li>Table</a>
+        </ul>
+    </nav>
+    <h1 style="text-align:center;color:rgb(37, 143, 143); background-color:blue;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Basic Forms</h1>
+    <form action="/Submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /> <br><br>
+          <label for="email">e-mail:</label>
+        <input type="email" id="email" email="email" required /><br><br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" vale="female"><br><br>
+<input
+    type="radio"
+    id="female"
+    name="gender"
+    value="female"
+/>
+<h3>Terms And Conditions</h3>
+<label class="pass">
+    <input type="checkbox" name="terms" required />
+    I agree to the terms and conditions
+</label><br><br>
+<label for="department">department</label>
+<select id="department" name="department">
+    <option value="ISE">ISE</option>
+    <option value="CSE">CSE</option>
+    <option value="ECE">ECE</option>
+    <option value="ME">ME</option>
+    <option value="CV">CV</option>
+    </select><br><br>
+    <label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br><br>
+<label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday" required><br><br>
+    <textarea>Description</textarea><br>
+    <label for="video">upload video</label>
+    <input type="file" id="video" name="video" accept="video/*"><br><br>
+    <label for="pdf">upload pdf</label>
+<input type="file" id="pdf" name="pdf" accept="application/pdf"><br><br>
+<label for="doc">upload document</label>
+<input type="file" id="doc" name="doc" accept="application/docx"><br><br>
+<label for="rating">give your rating</label>
+<input type="range" id="rating" name="rating" min="0" max="100"><br><br>
+<label for="color">color</label>
+<input type="color" id="color" name="color"><br><br>
+<input type="submit" value="submit" />
+<button type="reset">Reset</button>
+</form> 
+</body>
+</html>
